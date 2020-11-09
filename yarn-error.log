@@ -1,0 +1,67 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/sbin:/Users/pascalvanhecke/.composer/vendor/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/Cellar/php/7.4.12/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:~/.composer/vendor/bin:/usr/local/opt/openssl@1.1/bin:/usr/local/opt/valet-php@7.2/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.18.4
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@remix-run%2fcli: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140662:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141634:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141556:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1220:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "remix-starter-express",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "cross-env NODE_ENV=production remix build && tsc -b",
+      "dev": "concurrently \"remix run\" \"tsc -b -w\" \"nodemon --ignore app server.js\"",
+      "start": "cross-env NODE_ENV=production node server.js"
+    },
+    "dependencies": {
+      "@remix-run/cli": "^0.6.2",
+      "@remix-run/express": "^0.6.2",
+      "@remix-run/loader": "^0.6.2",
+      "@remix-run/react": "^0.6.2",
+      "express": "^4.17.1",
+      "morgan": "^1.10.0",
+      "react": "^16.14.0",
+      "react-dom": "^16.14.0",
+      "react-router": "^6.0.0-beta.0",
+      "react-router-dom": "^6.0.0-beta.0"
+    },
+    "devDependencies": {
+      "@types/react": "^16.9.53",
+      "@types/react-dom": "^16.9.8",
+      "concurrently": "^5.3.0",
+      "cross-env": "^7.0.2",
+      "nodemon": "^2.0.5",
+      "typescript": "^4.0.3"
+    },
+    "engines": {
+      "node": "12"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

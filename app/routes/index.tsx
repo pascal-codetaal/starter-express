@@ -4,13 +4,14 @@ import { useRouteData } from "@remix-run/react";
 export function meta() {
   return {
     title: "Remix Starter",
-    description: "Welcome to remix!"
+    description: "Welcome to remix!",
   };
 }
 
 export default function Index() {
   let data = useRouteData();
 
+  console.log(data);
   return (
     <div style={{ textAlign: "center", padding: 20 }}>
       <h2>Welcome to Remix!</h2>

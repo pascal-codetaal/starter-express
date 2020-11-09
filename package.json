@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "cross-env NODE_ENV=production remix build && tsc -b",
-    "dev": "concurrently \"remix run\" \"tsc -b -w\" \"nodemon --ignore app server.js\"",
-    "start": "cross-env NODE_ENV=production node server.js"
+    "dev": "concurrently \"remix run\" \"tsc -b -w\" \"nodemon --ignore app server.ts\"",
+    "start": "cross-env NODE_ENV=production node server.ts"
   },
   "dependencies": {
     "@remix-run/cli": "^0.6.2",
@@ -16,7 +16,10 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router": "^6.0.0-beta.0",
-    "react-router-dom": "^6.0.0-beta.0"
+    "react-router-dom": "^6.0.0-beta.0",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.0",
+    "typeorm": "^0.2.29"
   },
   "devDependencies": {
     "@types/react": "^16.9.53",

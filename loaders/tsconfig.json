@@ -1,8 +1,12 @@
 {
   "extends": "../config/shared-tsconfig.json",
-  "include": ["**/*"],
+  "include": [
+    "**/*"
+  ],
   "compilerOptions": {
     "outDir": "../build/loaders",
-    "module": "commonjs"
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }
